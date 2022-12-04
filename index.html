@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vue 3 Basics</title>
+  </head>
+  <body>
+    <div id="app">{{ greeting }} <input /></div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+      let app = Vue.createApp({
+        data: function () {
+          return {
+            greeting: "Hello Vue 3!",
+          };
+        },
+      });
+      app.mount("#app");
+    </script>
+  </body>
+</html>
